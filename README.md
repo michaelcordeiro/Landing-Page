@@ -1,2 +1,2 @@
 # Landing Page
- Landing page testando conhecimentos em HTML e CSS
+ Landing page para testar conhecimentos em HTML e CSS

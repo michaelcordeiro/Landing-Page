@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #411b99ef;
+    /* background: linear-gradient(329.54deg,  rgb(121, 33, 255) 0%, rgb(121, 33, 255) 100%);  */
+}
+
+
+
+
+/*MENU MOBILE*/
+
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line {
+    height: 4px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width:600px) {
+    header .container {
+        flex-direction: row;
+    }
+
+    h2, h3, p {
+        margin: auto 1.5rem;
+    }
+
+    li, a {
+        color: white;
+        font-family: 'Concert One', cursive;
+        font-size: 1.2rem;
+        text-decoration: none;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .responsive {
+        height: auto ;
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: rgb(121, 33, 255);
+        
+    }
+
+    header {
+        height: auto;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+
+
+    /* SESSAO 3 */
+
+
+    .sessao3 {
+        display: flex;
+        max-width: 450px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sessao3 .slides img {
+        height: 150px;
+        width: 150px;
+        margin-left: 20px;
+    }
+
+    .sessao3 .slides {
+        max-width: 450px;
+        /* align-items: center;
+        justify-content: center; */
+    }
+
+
+    /* SESSAO 4 */
+    
+    .sessao4, .print {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+
+    
+     .print img {
+        width: auto;
+        height: auto;
+        margin: 15px 0;
+    }
+    
+
+
+
+}
+
+
+/*ESCONDE O MENU NO DESKTOP*/
+.hide-menu {
+    display: none;
+}
+
+/*PADDIND LOGO DESKTOP*/
+.container, .logo {
+    padding: 15px;
+}
+
+/* FECHA MENU MOBILE*/
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.sessao1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 600;
+    font-family: 'Concert One', cursive;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 50px;
+    text-shadow: 1px 2px 5px black;
+}
+
+h2 {
+    font-family: 'Concert One', cursive;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-shadow: 1px 2px 5px black;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    text-shadow: 1px 2px 5px black;
+}
+
+
+p {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    line-height: 1.5;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+
+.btn { 
+    border: none;
+    cursor: pointer;
+    font-family: arial;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    height: 40px;
+    
+
+}
+
+.btn-red {
+    background-color: #E5B940;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 5px 0  #c29416;
+
+}
+
+/* .btn-red:hover{
+    background-color: rgb(221, 14, 87);
+    color: white;
+    box-shadow: 0 5px 0 rgb(207, 13, 81);
+} */
+
+.btn-red:active{
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    padding-top: 28px;  
+}
+
+.botao a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Concert One', cursive;
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+  
+}
+
+.botao a:hover {
+    background-color:  #E5B940;
+}
+
+.btn-oval {
+    width: 11rem;
+    text-decoration: none;
+}
+
+
+.sessao2 {
+    margin-top: 40px;
+   
+}
+
+.sessao2 p {
+    padding-top: 15px;
+    font-size: 1.4rem;
+}
+
+
+.sessao3 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sessao3 h2 {
+    text-decoration: underline;
+}
+
+.sessao3 .servicos {
+    list-style: none;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.slides img {
+    width: 300px;
+    height: 300px;
+    margin: 15px 0;
+    box-shadow: 5px 5px 11px black;
+}
+
+.slides img +img {
+    margin-left: 10px;
+}
+
+/* SESSAO 4 */
+
+.sessao4 {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.print img {
+    width: 290px;
+    height: 580px;
+    
+}
+
+.sessao4 h2 {
+    text-decoration: underline;
+    margin-bottom: 3rem;
+    margin-top: 3rem;  
+}
+
+
+.print img+img {
+    margin-left: 5px;
+}
+
+/* SESSÃO 5 */
+
+.sessao5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sessao5 h2 {
+    text-decoration: underline;
+    margin-bottom: 3rem;
+    margin-top: 2rem; 
+}
+
+.card-plano {
+    width: 90%;
+    height: auto;
+    /* background-color: rgb(73, 196, 73); */
+    background-color: #E5B940;
+    margin: 1.5rem 1.2rem;
+    border-radius: 2rem;
+    box-shadow: 2px 3px 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-plano p {
+    padding: 18px 2px;
+}
+
+.card-plano .riscar {
+    text-decoration: line-through;
+}
+
+.card-plano h3 {
+    padding-top: 10px;
+}
+
+.img-plano {
+    height: 150px;
+    width: 220px;
+}
+
+#botao-wpp {
+    background-color: indigo;
+    padding: 10px;
+    border-radius: 18px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Concert One', cursive;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+
+
+
+
+
+
+
+/* PERGUNTAS E RESPOSTAS */
+.perguntas {
+    background: none;
+    /* background-color: #411b99ef; */
+    max-width: 100%; 
+    max-height: 1000px; 
+    min-height: 600px; 
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+   }
+
+     /*deixa o conteudo centralizado*/
+.container2 {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    margin-top: 20px;
+    
+  }
+  
+  .accordion-item {
+    background-color: rgb(61, 59, 59);
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem , rgba(0,0,0,.1);
+  }
+  
+  .accordion-link {
+    font-size: 1.6rem;
+    color: rgba(255,255,255,.8);
+    text-decoration: none;
+    background-color: rgb(61, 59, 59);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  
+  .accordion-link  {
+    color: #e7d5ff;
+    padding: .5rem;
+    font-family: 'Concert One', cursive;
+  }
+  
+  .accordion-link .remove-outline {
+    display: none;
+  }
+  
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #212838;
+    font-size: 1.3rem;
+    border-radius: .4rem;
+    transition: max-height 650ms;
+  }
+  
+  .answer::before{
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #E5B940;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .answer p {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.815);
+    padding: 1rem;
+    
+  }
+  
+  .accordion-item:target .answer {
+    max-height: 20rem;
+  }
+  
+  .accordion-item:target .accordion-link .add-outline {
+    display: none;
+  }
+  
+  .accordion-item:target .accordion-link .remove-outline {
+    display: block;
+  }
+
+
+  .waves {
+    
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+  
+.footer {
+    z-index: 0;
+    display: block;
+}
+
+
